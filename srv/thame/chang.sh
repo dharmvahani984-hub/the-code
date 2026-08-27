@@ -29,21 +29,21 @@ uninstall_menu() {
         case "$uopt" in
             1)
                 echo -e "${RED}🧹 Removing Nebula…${RESET}"
-                cd /var/www/pterodactyl || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
+                cd /www/wwwroot/panel.test.obsidianhosting.in || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
                 blueprint -r nebula
                 echo -e "${GREEN}✨ Nebula removed!${RESET}"
                 sleep 2
             ;;
             2)
                 echo -e "${RED}🧹 Removing Euphoria…${RESET}"
-                cd /var/www/pterodactyl || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
+                cd /www/wwwroot/panel.test.obsidianhosting.in || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
                 blueprint -r euphoriatheme
                 echo -e "${GREEN}✨ Euphoria removed!${RESET}"
                 sleep 2
             ;;
             3)
                 echo -e "${RED}🧹 Removing Add Tool package…${RESET}"
-                cd /var/www/pterodactyl || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
+                cd /www/wwwroot/panel.test.obsidianhosting.in || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
                 blueprint -r versionchanger
                 blueprint -r mcplugins
                 blueprint -r sagaminecraftplayermanager
@@ -80,7 +80,7 @@ while true; do
         # ===== NEBULA INSTALL (AUTO-ENTER ADDED) =====
         1)
             echo -e "${GREEN}✨ Nebula auto-install starting…${RESET}"
-            cd /var/www/pterodactyl || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
+            cd /www/wwwroot/panel.test.obsidianhosting.in || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
 
             wget -q https://github.com/dharmvahani984-hub/the-code/raw/refs/heads/main/srv/thame/nebula.blueprint
 
@@ -96,7 +96,7 @@ while true; do
         # ===== EUPHORIA INSTALL (UNCHANGED) =====
         2)
             echo -e "${GREEN}🌈 Euphoria auto-install starting…${RESET}"
-            cd /var/www/pterodactyl || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
+            cd /www/wwwroot/panel.test.obsidianhosting.in || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
 
             wget -q https://github.com/dharmvahani984-hub/the-code/raw/refs/heads/main/srv/thame/euphoriatheme.blueprint
             blueprint -i euphoriatheme
@@ -114,7 +114,7 @@ while true; do
         # ===== ADD TOOL INSTALL (UNCHANGED) =====
         4)
             echo -e "${GREEN}🛠 Add Tool auto-install starting…${RESET}"
-            cd /var/www/pterodactyl || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
+            cd /www/wwwroot/panel.test.obsidianhosting.in || { echo -e "${RED}Path not found!${RESET}"; sleep 2; continue; }
 
             wget -q https://github.com/dharmvahani984-hub/the-code/raw/refs/heads/main/srv/thame/versionchanger.blueprint
             wget -q https://github.com/dharmvahani984-hub/the-code/raw/refs/heads/main/srv/thame/mcplugins.blueprint
